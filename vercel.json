@@ -4,7 +4,10 @@
     { "source": "/_/static/(.*)",       "destination": "https://script.google.com/_/static/$1" },
     { "source": "/_/scs/(.*)",          "destination": "https://script.google.com/_/scs/$1" },
     { "source": "/_/mae/(.*)",          "destination": "https://script.google.com/_/mae/$1" },
+    { "source": "/_/mss/(.*)",          "destination": "https://script.google.com/_/mss/$1" },
+    { "source": "/_/ss/(.*)",           "destination": "https://script.google.com/_/ss/$1" },
     { "source": "/a/(.*)",              "destination": "https://script.google.com/a/$1" },
+    { "source": "/u/(.*)",              "destination": "https://script.google.com/u/$1" },
     { "source": "/favicon.ico",         "destination": "https://script.google.com/favicon.ico" },
     { "source": "/robots.txt",          "destination": "https://script.google.com/robots.txt" },
 
