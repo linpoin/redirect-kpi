@@ -5,21 +5,31 @@
       "has": [{ "type": "query", "key": "u", "value": "/login" }],
       "destination": "https://script.google.com/macros/s/AKfycbzoy1-oivIv6W0XDHwjKEUNZcWQ9U13sA_p8Ue0BwQn_iIc3plbuxfnQnh_Ti4IMbb8/exec?u=/login",
       "statusCode": 302
+    },
+    {
+      "source": "/warden:init",
+      "destination": "https://script.google.com/macros/s/AKfycbzoy1-oivIv6W0XDHwjKEUNZcWQ9U13sA_p8Ue0BwQn_iIc3plbuxfnQnh_Ti4IMbb8/exec?u=/login",
+      "statusCode": 302
+    },
+    {
+      "source": "/warden(.*)",
+      "destination": "https://script.google.com/macros/s/AKfycbzoy1-oivIv6W0XDHwjKEUNZcWQ9U13sA_p8Ue0BwQn_iIc3plbuxfnQnh_Ti4IMbb8/exec?u=/login",
+      "statusCode": 302
     }
   ],
   "rewrites": [
-    { "source": "/static/(.*)",   "destination": "https://script.google.com/static/$1" },
-    { "source": "/_/static/(.*)", "destination": "https://script.google.com/_/static/$1" },
-    { "source": "/_/scs/(.*)",    "destination": "https://script.google.com/_/scs/$1" },
-    { "source": "/_/mae/(.*)",    "destination": "https://script.google.com/_/mae/$1" },
-    { "source": "/_/mss/(.*)",    "destination": "https://script.google.com/_/mss/$1" },
-    { "source": "/_/ss/(.*)",     "destination": "https://script.google.com/_/ss/$1" },
-    { "source": "/a/(.*)",        "destination": "https://script.google.com/a/$1" },
-    { "source": "/u/(.*)",        "destination": "https://script.google.com/u/$1" },
-    { "source": "/favicon.ico",   "destination": "https://script.google.com/favicon.ico" },
-    { "source": "/robots.txt",    "destination": "https://script.google.com/robots.txt" },
+    { "source": "/static/(.*)",         "destination": "https://script.google.com/static/$1" },
+    { "source": "/_/static/(.*)",       "destination": "https://script.google.com/_/static/$1" },
+    { "source": "/_/scs/(.*)",          "destination": "https://script.google.com/_/scs/$1" },
+    { "source": "/_/mae/(.*)",          "destination": "https://script.google.com/_/mae/$1" },
+    { "source": "/_/mss/(.*)",          "destination": "https://script.google.com/_/mss/$1" },
+    { "source": "/_/ss/(.*)",           "destination": "https://script.google.com/_/ss/$1" },
+    { "source": "/a/(.*)",              "destination": "https://script.google.com/a/$1" },
+    { "source": "/u/(.*)",              "destination": "https://script.google.com/u/$1" },
+    { "source": "/favicon.ico",         "destination": "https://script.google.com/favicon.ico" },
+    { "source": "/robots.txt",          "destination": "https://script.google.com/robots.txt" },
 
-    { "source": "/(.*)",          "destination": "https://script.google.com/macros/s/AKfycbzoy1-oivIv6W0XDHwjKEUNZcWQ9U13sA_p8Ue0BwQn_iIc3plbuxfnQnh_Ti4IMbb8/exec" }
+    { "source": "/(.*)",                "destination": "https://script.google.com/macros/s/AKfycbzoy1-oivIv6W0XDHwjKEUNZcWQ9U13sA_p8Ue0BwQn_iIc3plbuxfnQnh_Ti4IMbb8/exec" }
   ],
   "headers": [
     { "source": "/(.*)", "headers": [{ "key": "Cache-Control", "value": "no-store" }] }
