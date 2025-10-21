@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://script.google.com/macros/s/AKfycbwy2jSbLmlh3A6H-0M05OfS8yiuy9frNxzgVCnooogw7ZNze6w6py9TWE2ruvOY2bVGCw/exec?u=/panel",
+      "statusCode": 301
+    }
+  ]
+}
