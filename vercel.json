@@ -8,7 +8,7 @@
     { "source": "/robots.txt",    "destination": "https://script.google.com/robots.txt" },
 
     /* 其餘全部交給 GAS 的 exec */
-    { "source": "/(.*)",          "destination": "https://script.google.com/macros/s/你的_EXEC_ID/exec" }
+    { "source": "/(.*)",          "destination": "https://script.google.com/macros/s/AKfycbzoy1-oivIv6W0XDHwjKEUNZcWQ9U13sA_p8Ue0BwQn_iIc3plbuxfnQnh_Ti4IMbb8/exec" }
   ],
   "headers": [
     { "source": "/(.*)", "headers": [ { "key": "Cache-Control", "value": "no-store" } ] }
