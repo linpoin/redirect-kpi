@@ -1,16 +1,16 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "https://script.google.com/macros/s/AKfycbzoy1-oivIv6W0XDHwjKEUNZcWQ9U13sA_p8Ue0BwQn_iIc3plbuxfnQnh_Ti4IMbb8/exec"
-    }
+    { "source": "/static/(.*)",   "destination": "https://script.google.com/static/$1" },
+    { "source": "/_/scs/(.*)",    "destination": "https://script.google.com/_/scs/$1" },
+    { "source": "/_/mae/(.*)",    "destination": "https://script.google.com/_/mae/$1" },
+    { "source": "/a/(.*)",        "destination": "https://script.google.com/a/$1" },
+    { "source": "/favicon.ico",   "destination": "https://script.google.com/favicon.ico" },
+    { "source": "/robots.txt",    "destination": "https://script.google.com/robots.txt" },
+
+    /* 其餘全部交給 GAS 的 exec */
+    { "source": "/(.*)",          "destination": "https://script.google.com/macros/s/你的_EXEC_ID/exec" }
   ],
   "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "no-store" }
-      ]
-    }
+    { "source": "/(.*)", "headers": [ { "key": "Cache-Control", "value": "no-store" } ] }
   ]
 }
